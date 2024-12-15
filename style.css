@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Doto";
+  src: local("Doto"), url("fonts/Doto-VariableFont_ROND,wght.ttf");
+}
+
+@font-face {
+  font-family: "AnonymicePro Nerd Font";
+  src: local("AnonymicePro Nerd Font"),
+    url("fonts/AnonymiceProNerdFont-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AnonymicePro Nerd Font";
+  src: local("AnonymicePro Nerd Font"),
+    url("fonts/AnonymiceProNerdFont-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "AnonymicePro Nerd Font";
+  src: local("AnonymicePro Nerd Font"),
+    url("fonts/AnonymiceProNerdFont-Italic.ttf");
+  font-weight: regular;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AnonymicePro Nerd Font";
+  src: local("AnonymicePro Nerd Font"),
+    url("fonts/AnonymiceProNerdFont-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+:root {
+  color-scheme: light;
+  text-transform: lowercase;
+  font-family: "AnonymicePro Nerd Font";
+  --border: 1px;
+  --radius: 11px;
+  --color: #665a53;
+  --background-color-1: #f3ffef;
+  --background-color-2: #d4ded1;
+}
+
+body {
+  color: var(--color);
+  background-color: var(--background-color-1);
+  max-width: 777px;
+  margin-inline: auto;
+  margin-block: 0;
+  padding-inline: 11px;
+  padding-block: 0;
+}
+
+header,
+section,
+footer {
+  border: var(--border) solid var(--background-color-2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-block-end: 11px;
+}
+
+section > :not(h2),
+footer > :not(span, button) {
+  margin-inline-start: 11px;
+}
+
+header {
+  padding-block-start: 33px;
+  border-block-start: none;
+  border-start-start-radius: 0;
+  border-start-end-radius: 0;
+}
+
+footer {
+  border-block-end: none;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+  padding-block-start: 11px;
+  padding-block-end: 77px;
+  margin-block-end: 0;
+}
+
+marquee {
+  width: 100%;
+  font-family: "Doto";
+  font-variation-settings: "ROND" 100;
+  font-weight: 300;
+  margin-block: 33px;
+}
+
+marquee a {
+  text-decoration: none;
+}
+
+footer span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-block: 22px;
+}
+
+footer button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 0 auto;
+  display: table;
+  color: inherit;
+  font-size: xx-small;
+}
+
+section h2 {
+  padding: 3px;
+  padding-inline-start: 11px;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  color: var(--color);
+  background-color: var(--background-color-2);
+  font-size: medium;
+}
+
+header h1 a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+}
+
+header h1 a span {
+  font-variation-settings: "ROND" 100;
+  flex: max-content;
+  max-width: 2.2ch;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1 {
+  margin-block: 0;
+  font-family: "Doto";
+  font-weight: 222;
+  font-size: xxx-large;
+}
+
+a {
+  color: var(--color);
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+ul li::before {
+  font-size: x-small;
+  content: "❥";
+  margin-inline-end: 1ch;
+  vertical-align: middle;
+}
