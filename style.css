@@ -21,7 +21,7 @@
   font-family: "AnonymicePro Nerd Font";
   src: local("AnonymicePro Nerd Font"),
     url("fonts/AnonymiceProNerdFont-Italic.ttf");
-  font-weight: regular;
+  font-weight: normal;
   font-style: italic;
 }
 
@@ -103,6 +103,11 @@ footer span {
   gap: 5px;
   flex-wrap: wrap;
   margin-block: 22px;
+  opacity: 44%;
+}
+
+footer span:hover {
+  opacity: 100%;
 }
 
 footer button {
